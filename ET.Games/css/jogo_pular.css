@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.games_board_all{
+    border-bottom: solid 10px  rgba(35, 160, 35, 1);
+    background: linear-gradient( rgba(25,25,112) 5%, rgba(28,28,28));
+    overflow: hidden;
+}
+
+.message_start, .placar_game{
+    position: absolute;
+    font-size: 2em;
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgba(255,255,0);
+    text-shadow: 4px 4px #000;
+    z-index: 3;
+    animation: start-animation 3s infinite linear
+}
+
+.placar_game{
+    animation: none;
+    opacity: 0;
+}
+
+.img_pipe{
+    width: 60px;
+    bottom: 0;
+    right: -120px;
+    position: absolute;
+}
+
+.run{
+    animation: pipe-animation 1.5s infinite linear; 
+}
+
+.img_clouds{
+    width: 400px;
+    position: absolute;
+    animation: clouds-animation 20s infinite linear; 
+}
+
+.img_mario{
+    width: 150px;
+    bottom: 0;
+    position: absolute;
+}
+
+.jump{
+    animation: jump-animation .6s ease-out;
+}
+
+
+.show{
+    display: flex;
+}
+
+@keyframes start-animation{
+    0%{
+        opacity: 0.5;
+    } 
+    50%{
+        opacity: 1;
+    } 
+    100%{
+        opacity: 0.5;
+    }
+}
+
+@keyframes pipe-animation{
+    from{
+        right: -80;
+    } to {
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation{
+    from{
+        right: -400px;
+    } to {
+        right: 100%;
+    }
+}
+
+@keyframes jump-animation{
+    0%{
+        bottom: 0;
+    } 
+    
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
