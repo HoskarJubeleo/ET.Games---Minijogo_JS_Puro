@@ -1,0 +1,75 @@
+.board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.board.x .cell:not(.x):not(.o):hover::before, .board.x .cell:not(.x):not(.o):hover::after, 
+.board.o .cell:not(.x):not(.o):hover::before, .board.o .cell:not(.x):not(.o):hover::after{
+    opacity: .2;
+}
+
+/* celulas do corpo do jogo */
+.cell{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgba(255, 255, 255, 1);
+    border-radius: 8px;
+}
+
+.cell.x, .cell.o{
+    cursor: not-allowed;
+}
+
+.cell:nth-child(1), .cell:nth-child(2), .cell:nth-child(3){
+    border-top : none;
+}
+
+.cell:nth-child(7), .cell:nth-child(8), .cell:nth-child(9){
+    border-bottom : none;
+}
+
+.cell:nth-child(1), .cell:nth-child(4), .cell:nth-child(7){
+    border-left: none;
+}
+
+.cell:nth-child(3), .cell:nth-child(6), .cell:nth-child(9){
+    border-right: none;
+}
+
+/* X */
+.cell.x::before, .cell.x::after, .board.x .cell:not(.x):not(.o):hover::before, .board.x .cell:not(.x):not(.o):hover::after{
+    content: '';
+    width: calc(90px * 1);
+    height: calc(90px * 0.15);
+    position: absolute;
+    background: rgb(138,43,226);
+}
+
+.cell.x::before, .board.x .cell:hover::before{
+    transform: rotate(45deg);
+}
+
+.cell.x::after, .board.x .cell:hover::after{
+    transform: rotate(-45deg);
+}
+
+/* O */
+.cell.o::before, .board.o .cell:not(.x):not(.o):hover::before, .cell.o::after, .board.o .cell:not(.x):not(.o):hover::after{
+    content: '';
+    width: calc(100px * 0.65);
+    height: calc(100px * 0.65);
+    position: absolute;
+    border: solid 10px rgb(138,43,226);
+    border-radius: 50%;
+    background: transparent; 
+}
