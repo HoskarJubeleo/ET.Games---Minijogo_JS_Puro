@@ -19,7 +19,7 @@ const jump = (event) =>{
     message.innerHTML = '';
     gameOn = true;
     audioJP.play();
-    audioJP.volume = 0.05;
+    audioJP.volume = 0.01;
     placarGame.style.opacity = '1';
 
         setTimeout(() => {
@@ -39,7 +39,7 @@ const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
     const marioPosition =+ window.getComputedStyle(mario).bottom.replace('px', '');
 
-    if(pipePosition <= 140 && pipePosition > 2 && marioPosition < 60){
+    if(pipePosition <= 120 && pipePosition > 2 && marioPosition < 60){
         gameOn = false;
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;

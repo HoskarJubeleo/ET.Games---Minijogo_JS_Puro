@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main{
+    width: 80vw;
+    height: 70vh;
+}
+
+article{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobreTitle{
+    width: auto;
+    padding: 1em;
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .2);
+}
+
+.sobreTitle img{
+    width: 80px;
+    margin: 0 1.5em 0 .5em;
+}
+
+.boxProjeto, .boxCreditos{
+    width: 100%;
+    padding: 1em;
+}
+
+.boxProjeto{
+    margin: 1em 0 0 0;
+}
+
+p{
+    margin: 1em 0 0 0;
+}
+
+footer{
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.1em;
+    background-color: rgba(138,43,226, 1);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .2);
+}
+
+footer p{
+    margin: 0 0 .5em 0;
+    color: #C0C0C0;
+}
+
+.contato a i{
+    font-size: 1.6em;
+    margin: .5em;
+    color: #C0C0C0;
+}
+
+.contato a i:hover{
+    color: #fff;
+}
+
+/* css especifico para esta pagina no navbar */
+
+.linkSobre{
+    color: rgba(138,43,226, .8);
+    transform: scale(1.1);
+}
