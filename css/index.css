@@ -102,3 +102,9 @@ main{
     color: rgba(138,43,226, .8);
     transform: scale(1.1);
 }
+
+@media only screen and (max-width: 1024px) {
+    .tag_title{
+        width: 60%;
+    }
+}

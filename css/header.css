@@ -20,11 +20,12 @@ header .div_logo{
 
 header .div_logo h1{
     font-size: 3em;
+    margin: 0 .5em 0 0;
 }
 
 .img_logo{
-    width: 70px;
-    margin-left: 2em;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     box-shadow: 0 0 6px 5px rgba(138,43,226, 1);
 }

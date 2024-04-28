@@ -19,11 +19,11 @@ newHerderNav = document.createElement("nav");
 newHerderAHome = document.createElement("a");
 newHerderAHome.textContent = "Home";
 newHerderAHome.classList.add('linkHome');
-newHerderAHome.setAttribute('href', "../index.html");
+newHerderAHome.setAttribute('href', "index.html");
 newHerderASobre = document.createElement("a");
 newHerderASobre.textContent = "Sobre";
 newHerderASobre.classList.add('linkSobre');
-newHerderASobre.setAttribute('href', "../sobre.html");
+newHerderASobre.setAttribute('href', "sobre.html");
 
 //Logo do Header
 newHeaderDiv.appendChild(newHeaderH1);

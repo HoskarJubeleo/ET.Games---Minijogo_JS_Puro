@@ -8,7 +8,7 @@ const boxEndGame = document.querySelector("[data-boxEndGame]");
 const TextEndGame = document.querySelector("[data-textEndGame]");
 const btnStartGame = document.querySelector("[data-btnStartGame]");
 
-const audioJM = new Audio('../assets/jogo_minhocao/minhocao_comendo.mp3');
+const audioJM = new Audio('assets/jogo_minhocao/minhocao_comendo.mp3');
 
 const size = 20;
 

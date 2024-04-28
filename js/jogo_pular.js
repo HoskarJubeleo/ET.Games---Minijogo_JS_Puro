@@ -8,7 +8,7 @@ const btnStartGame = document.querySelector("[data-btnStartGame]");
 const clouds = document.querySelector('.img_clouds');
 const pipe = document.querySelector('.img_pipe');
 const mario = document.querySelector('.img_mario');
-const audioJP = new Audio('../assets/jogo_pular/mario_pulando.mp3');
+const audioJP = new Audio('assets/jogo_pular/mario_pulando.mp3');
 
 let placar = 0; 
 let gameOn = false;
@@ -47,7 +47,7 @@ const loop = setInterval(() => {
         mario.style.animation = 'none';
         mario.style.bottom = `${marioPosition}px`;
 
-        mario.src = "../assets/img/jogoPular/game-over.png";
+        mario.src = "assets/img/jogoPular/game-over.png";
         mario.style.width = '80px';
         mario.style.marginLeft = '50px';
 

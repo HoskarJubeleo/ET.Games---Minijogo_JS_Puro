@@ -63,17 +63,18 @@ footer{
 
 footer p{
     margin: 0 0 .5em 0;
-    color: #C0C0C0;
+    color: rgba(255, 255, 255, .9);
 }
 
 .contato a i{
     font-size: 1.6em;
     margin: .5em;
-    color: #C0C0C0;
+    color: rgba(255, 255, 255, .5);
+    transition: .2s;
 }
 
 .contato a i:hover{
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
 }
 
 /* css especifico para esta pagina no navbar */
