@@ -24,7 +24,7 @@
         
         <main class="main_games_all"> <!-- CSS no arquivo global.css -->
             <article class="games_board_all"> <!-- CSS no arquivo global.css -->
-                <canvas id="canva" width="400" height="400">
+                <canvas id="canva" width="600" height="400">
                     
                 </canvas>
             </article>
@@ -40,7 +40,11 @@
             
         </div>
 
-        <script src="js/jogo_space_invader.js" defer></script>
+        <script src="js/jogo_space_invader/engine.js" defer></script> <!-- import motor de jogo -->
+        <script src="js/jogo_space_invader/game_objects.js" defer></script> <!-- import prototipo de objeto do jogo -->
+        <script src="js/jogo_space_invader/player.js" defer></script> <!-- import objeto player -->
+        <script src="js/jogo_space_invader/shield.js" defer></script> <!-- import objeto shield -->
+        <script src="js/jogo_space_invader/space.js" defer></script> <!-- import codigo que une os objetos e prepara as interacoes -->
         <script src="js/dinamica_page.js" defer></script>    
 
     </body>

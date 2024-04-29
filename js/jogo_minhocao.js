@@ -21,7 +21,7 @@ const randonNumber = (min, max) => { //criacao numeros -randon-
 }
 
 const randonPosition = () => { //criacao posicao da comida -randon-
-    const number = randonNumber(0, canvas.width - size);
+    const number = randonNumber(0, canvas.height - size);
     return Math.round(number / size) * size;
 };
 
@@ -29,6 +29,12 @@ const randomColor = () => { //alterar cores da comida -randon-
     const red = randonNumber(0, 255);
     const green = randonNumber(0, 255);
     const blue = randonNumber(0, 255);
+
+    if(
+        red == 102 && green == 205 && blue == 170 
+        || red == 0 && green == 255 && blue == 127 
+        || red == 28 && green == 28 && blue == 28
+    ) return;
 
     return `rgb(${red}, ${green}, ${blue})`;
 }

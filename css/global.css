@@ -113,6 +113,10 @@ body{
     main{
         display: none !important;
     }
+
+    footer{
+        display: none !important;
+    }
     
     .box_mobile{
         width: 100vw;
